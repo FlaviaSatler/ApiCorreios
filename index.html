@@ -20,25 +20,21 @@
         </header>
 
         <main class="row main-form">
-            <form class="form">
-                <div class="form-group">
-                    <label for="txtcep" class="descricao">Digite aqui seu cep 
-                    <input type="text" class="form-control" id="cep"></label>
-                </div>
-                <p class="descricao">
-                    Rua: <span id="rua"></span>
-                </p>
-                <p class="descricao">
-                    Bairro: <span id="bairro"></span>
-                </p>
-                <p class="descricao">
-                    Cidade: <span id="cidade"></span>
-                </p>
-                <p class="descricao">
-                    Estado: <span id="estado"></span>
-                </p>
+                <form method="get" action="." class="form-group">
+                        <label>Cep:
+                        <input class="form-control" name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                               onblur="pesquisacep(this.value);" /></label><br />
+                        <label>Rua:
+                        <input class="form-control" name="rua" type="text" id="rua" size="30"/></label><br />
+                        <label>Bairro:
+                        <input class="form-control" name="bairro" type="text" id="bairro" size="30" /></label><br />
+                        <label>Cidade:
+                        <input class="form-control" name="cidade" type="text" id="cidade" /></label><br />
+                        <label>Estado:
+                        <input class="form-control" name="uf" type="text" id="uf" size="2" /></label><br />
                 
-            </form>
+                      </form>
+        
         </main>
 
         

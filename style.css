@@ -32,12 +32,17 @@ body{
     margin-left: 15px;
 }
 
-.form .descricao{
-    font-size: 20px;
-    color: #5e0356;
-    font-weight: 700;
+.form-group{
+    margin-left: 5%;
 }
-.form .descricao span{
-    color: #5c5858;
+
+.form-group input{
+    border-radius: 8%;
+    font-size: 15px;
+}
+
+.form-group label{
+    font-size: 18px;
+    color: #6e3939;
     font-weight: 600;
 }
