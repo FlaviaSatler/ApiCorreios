@@ -7,7 +7,7 @@ $(document).ready(function(){
         var url = 'https://viacep.com.br/ws/' + cep +'/json';
         $.getJSON(url, function(data){
             if("error" in data){
-                return
+                alert("CEP não encontrado");
             }
 
             $('#rua').text(data.logradouro);
